@@ -1,5 +1,3 @@
-export default function handler(req, res) { 
-  setTimeout(() =
-    res.status(200).send("Hello from GitHub to Vercel!"); 
-  }, 1000); 
-} 
+export default function handler(req, res) {
+  res.status(200).json({ message: 'Hello from Vercel!' });
+}
