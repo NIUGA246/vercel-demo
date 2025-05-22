@@ -1,6 +1,7 @@
-const { MongoClient } = require('mongodb');
+// Change require to import
+import { MongoClient } from 'mongodb';
 
-module.exports = async (req, res) => {
+export default async (req, res) => {
   if (req.method !== "POST") return res.status(405).send("Only POST allowed");
 
   const { name, email } = req.body;
